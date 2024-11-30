@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>About me | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="看见朋友在更新博客，心血来潮也搭建了一个，第一篇博客我想写写自己。 博客取名来自于我很喜欢的一句话，送给我自己也送给你们：少年心怀乌托邦，心仍向阳肆生长。希望看到这篇博客的大家能够对生活心怀热爱！ 今年一月份刚过完二十岁生日，学生这个身份伴随我到了现在。 我时常会问自己学习的意义是什么，我想，除了学习知识，更重要的应该是感受生活吧。 初中初中的记忆已经非常模糊了，但我还记得班主任对我的关心，去南昌">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About me">
+<meta property="og:url" content="http://example.com/2022/03/25/About%20me/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="看见朋友在更新博客，心血来潮也搭建了一个，第一篇博客我想写写自己。 博客取名来自于我很喜欢的一句话，送给我自己也送给你们：少年心怀乌托邦，心仍向阳肆生长。希望看到这篇博客的大家能够对生活心怀热爱！ 今年一月份刚过完二十岁生日，学生这个身份伴随我到了现在。 我时常会问自己学习的意义是什么，我想，除了学习知识，更重要的应该是感受生活吧。 初中初中的记忆已经非常模糊了，但我还记得班主任对我的关心，去南昌">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2022-03-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-11-30T00:47:20.330Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/03/25/About%20me/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'About me',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a><a class="nav-page-title" href="/"><span class="site-name">About me</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">About me</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-03-24T16:00:00.000Z" title="Created 2022-03-25 00:00:00">2022-03-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-30T00:47:20.330Z" title="Updated 2024-11-30 08:47:20">2024-11-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>看见朋友在更新博客，心血来潮也搭建了一个，第一篇博客我想写写自己。</p>
+<p>博客取名来自于我很喜欢的一句话，送给我自己也送给你们：<strong>少年心怀乌托邦，心仍向阳肆生长。</strong>希望看到这篇博客的大家能够对生活心怀热爱！</p>
+<p>今年一月份刚过完二十岁生日，学生这个身份伴随我到了现在。</p>
+<p>我时常会问自己学习的意义是什么，我想，除了学习知识，更重要的应该是感受生活吧。</p>
+<h2 id="初中"><a href="#初中" class="headerlink" title="初中"></a><strong>初中</strong></h2><p>初中的记忆已经非常模糊了，但我还记得班主任对我的关心，去南昌自招时候的失落，还有那些至今每次放假都会聚一次的好朋友们。和父母散步的时候，妈妈经常会说这辈子做的最错误的一个决定是让我就读二中，我不这么认为，从教学质量上来说，我的初中在我们那确实不是最好的，但是我认识的这群人是最好的。每晚放学时的跑步、和朋友们放学路上的吵吵闹闹都是我回忆中的星星，闪闪发光。</p>
+<h2 id="高中"><a href="#高中" class="headerlink" title="高中"></a><strong>高中</strong></h2><p>前十八年为了高考的学习，和我现在的专业基本没有关系。</p>
+<p>但是在这十八年里，我结识了各种各样的人，遇到了很好的老师，收获了父母的尊重，也遇见了很多要好的朋友。</p>
+<p>在上饶中学，我学会了怎样自主学习，怎样合理的安排自己的时间，学会了怎样应对自己内心的焦虑和怎样在高压的氛围里面寻找乐趣。</p>
+<p>更重要的是，学会了做一个健全的人。</p>
+<h2 id="大学"><a href="#大学" class="headerlink" title="大学"></a><strong>大学</strong></h2><p>进入大学，我更多的是好奇，兴奋还有一丝恐惧。</p>
+<p>好奇大学的生活和大学的大家是什么样的，恐惧在担心自己的社交能力的欠缺。直到现在大学的一年半我经历了很多。<br>迷茫，失落，坚定。</p>
+<p>大一的时候随波逐流，大家干什么我就干什么，导致我大一并没有什么好的产出，在大一结束的时候尝试转专业，去追逐自己读初中开始就存在的梦想。这是一段非常难忘的记忆，这是我第一次接触到所谓的社会。在失败之后，我有对自己能力的怀疑，也有对这个社会的不解。</p>
+<p>要说目前为止我最庆幸的事情是进入了iOS club</p>
+<p>在刚看到实验室招新通知的时候我也怀疑自己的能力是否足够，没有勇气去尝试。</p>
+<p>“管他呢，投个简历面试，不行就算了！”决定去面试前我这样给自己打气，于是我成为了iOS club最后一个被面试的人，也成为了我们这一届最后一个成员。</p>
+<p>在这里，我遇见了很多优秀的人，也渐渐明晰了自己的方向，让我在计算机这个行业找到了属于我的快乐，也收获了许多很要好的朋友。</p>
+<h2 id="人生"><a href="#人生" class="headerlink" title="人生"></a><strong>人生</strong></h2><p>在这20年的路上我遇到了很多，也错过了很多，我会记得我父亲在我高考完对我说的“喜形于色，怒藏于心”；我也会记得老师对我说的“严于律己，宽以待人”，在这一路上我很庆幸我碰见了很多良师益友。</p>
+<p>人生都有低谷，所谓难过，难完之后也都会过去。</p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a><strong>未完待续</strong></h1><p>往后还有很长的路要走，很感谢你能看到这里，我希望这篇博客能见证我的成长，能见证我成为我想成为的人。</p>
+<h1 id="We-can’t-change-the-past-but-we-can-make-the-future"><a href="#We-can’t-change-the-past-but-we-can-make-the-future" class="headerlink" title="We can’t change the past, but we can make the future."></a><strong>We can’t change the past, but we can make the future.</strong></h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/03/25/About%20me/">http://example.com/2022/03/25/About%20me/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/" title="亚太数模总结"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">亚太数模总结</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E4%B8%AD"><span class="toc-number">1.</span> <span class="toc-text">初中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E4%B8%AD"><span class="toc-number">2.</span> <span class="toc-text">高中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%AD%A6"><span class="toc-number">3.</span> <span class="toc-text">大学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E7%94%9F"><span class="toc-number">4.</span> <span class="toc-text">人生</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD"><span class="toc-number"></span> <span class="toc-text">未完待续</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#We-can%E2%80%99t-change-the-past-but-we-can-make-the-future"><span class="toc-number"></span> <span class="toc-text">We can’t change the past, but we can make the future.</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/30/1/" title="nudter选课指南">nudter选课指南</a><time datetime="2024-11-30T00:33:58.000Z" title="Created 2024-11-30 08:33:58">2024-11-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/09/07/csu/" title="中南时光">中南时光</a><time datetime="2022-09-06T16:00:00.000Z" title="Created 2022-09-07 00:00:00">2022-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/" title="亚太数模总结">亚太数模总结</a><time datetime="2022-05-02T16:00:00.000Z" title="Created 2022-05-03 00:00:00">2022-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/25/About%20me/" title="About me">About me</a><time datetime="2022-03-24T16:00:00.000Z" title="Created 2022-03-25 00:00:00">2022-03-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

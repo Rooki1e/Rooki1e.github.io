@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>亚太数模总结 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="比赛前组队比赛前的准备包括队友的选择和相关知识的学习，组队方面，队友的选择也是很重要的。特别是数模这种队友少时间短的比赛，在很短的时间内要完成很多工作，靠谱并且能力强的队友对于新手来说是非常重要的。 数模比赛一般三个人的配置是这样的： 数学手 编程手 论文手 实际上我身边朋友参加了数模的都是这样的队伍配置，但是我们队伍对于职责的界定很模糊，大家都是一起干的状态，就我个人而言在比赛的四天内我写过论文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="亚太数模总结">
+<meta property="og:url" content="http://example.com/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="比赛前组队比赛前的准备包括队友的选择和相关知识的学习，组队方面，队友的选择也是很重要的。特别是数模这种队友少时间短的比赛，在很短的时间内要完成很多工作，靠谱并且能力强的队友对于新手来说是非常重要的。 数模比赛一般三个人的配置是这样的： 数学手 编程手 论文手 实际上我身边朋友参加了数模的都是这样的队伍配置，但是我们队伍对于职责的界定很模糊，大家都是一起干的状态，就我个人而言在比赛的四天内我写过论文">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2022-05-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-11-30T00:46:56.703Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '亚太数模总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a><a class="nav-page-title" href="/"><span class="site-name">亚太数模总结</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">亚太数模总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-05-02T16:00:00.000Z" title="Created 2022-05-03 00:00:00">2022-05-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-30T00:46:56.703Z" title="Updated 2024-11-30 08:46:56">2024-11-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="比赛前"><a href="#比赛前" class="headerlink" title="比赛前"></a><strong>比赛前</strong></h1><h2 id="组队"><a href="#组队" class="headerlink" title="组队"></a><strong>组队</strong></h2><p>比赛前的准备包括队友的选择和相关知识的学习，组队方面，队友的选择也是很重要的。特别是数模这种队友少时间短的比赛，在很短的时间内要完成很多工作，靠谱并且能力强的队友对于新手来说是非常重要的。</p>
+<p>数模比赛一般三个人的配置是这样的：</p>
+<p><strong>数学手</strong></p>
+<p><strong>编程手</strong></p>
+<p><strong>论文手</strong></p>
+<p>实际上我身边朋友参加了数模的都是这样的队伍配置，但是我们队伍对于职责的界定很模糊，大家都是一起干的状态，就我个人而言在比赛的四天内我写过论文，编程实现过模型，找过相关数据，也和eric商讨过解决方案。</p>
+<p>总的看下来，队友职责的界定其实没有那么重要（也有可能因为我们是新手的原因），听上去可能会让队伍变得非常混乱，但我还是觉得我们打比赛期间的氛围还有安排都还是很好的。对于新手并且准备和认识的人组队的话，我建议还是找一些合得来并且综合能力强的朋友一起，可以及时更改职责救火也不会因为职责问题出现矛盾。</p>
+<h2 id="赛前相关知识准备"><a href="#赛前相关知识准备" class="headerlink" title="赛前相关知识准备"></a><strong>赛前相关知识准备</strong></h2><p>我们大概提前一个月开始就有一些相应的规划。我们参加数模之前基本没有过相关的知识储备，顺带一提csu计科的数模选修课对于数模比赛的帮助不大，更多是在讲一些科学计算。在赛前我们三个一致认为我们需要对于基本的<strong>模型有些了解，对于基本的数学知识做相应的学习，不需要完全掌握每一个模型的数学原理，但要知道在什么样的问题场景下可以使用。</strong></p>
+<p>在比赛开始的三周前（具体时间记不太清楚了），队长给了我们一份数模相关资料，并且在第一次开完会的晚上在群里发了一份文档，并且在每周会发一份周报，每个人写一下这周做了什么相关工作。这个模式对于自驱力比较强的队伍可以借鉴，不会给大家一种很push的感觉，但是又有效防止了大家摸鱼。</p>
+<p>当时的模型学习分配如下：</p>
+<p><img src="http://cherishimgbed.oss-cn-beijing.aliyuncs.com/uPic/%E6%88%AA%E5%B1%8F2022-05-04%2020.09.19.png" alt="截屏2022-05-04 20.09.19"></p>
+<p>虽然这里面大部分的模型我们都没有用到，但是大家都有学到很多数学算法，并且这些算法在计算机领域也有运用，更别说拿了奖，这波是赢麻了。</p>
+<h1 id="比赛中"><a href="#比赛中" class="headerlink" title="比赛中"></a><strong>比赛中</strong></h1><p>我们选择的是对于技术要求相对较低的C题，题目一共有四个问题：</p>
+<p><strong>1.根据各种环境因子建立塞罕坝环境评估模型，对比分析塞罕坝治理前与治理后对周边环境的影响。</strong></p>
+<p><strong>2.评估塞罕坝治理对北京抗风沙能力的影响，量化评估塞罕坝在其中的作用。</strong></p>
+<p><strong>3.对塞罕坝的治理模式做迁移，找到国内适合的地点建立自然保护区。</strong></p>
+<p><strong>4.同第三问，但是在亚太地区做迁移，给出技术性报告。</strong></p>
+<h2 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a><strong>时间安排</strong></h2><p>整个比赛历时四天，前面两天我和eric在进行找数据还有编程实现数据分析上，ruia因为第一天没课，就先对问题进行了分析并且开始找数据。后面两天我在进行论文的编写，在ruia提出可以利用土地荒漠化地图之后用opencv进行掩模，取得了不错的效果，然后开始写论文，ruia则在对于我和eric做出的问题解决方案进行优化，并且提出了利用土地荒漠化地图的绝妙想法。</p>
+<h2 id="数据收集"><a href="#数据收集" class="headerlink" title="数据收集"></a><strong>数据收集</strong></h2><p>我们选择的是环境类问题，问题所需要的数据完全是由我们自己进行收集。说到这个我就要说了，国家气象局真的很难用，能不用就别用。（也有可能是我没有找到正确的使用方法）下面是我们当时用的一些网站：</p>
+<p><a target="_blank" rel="noopener" href="https://en.tutiempo.net/climate">气候数据</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.noaa.gov/">NOAA</a></p>
+<p><a target="_blank" rel="noopener" href="https://disc.gsfc.nasa.gov/">NASA的气候数据，似乎要科学上网</a></p>
+<p>在进行问题解决环节数据收集是最让我头疼也是我们最花时间的环节，现在来看我认为这类数模比赛不在于掌握了多少模型。<strong>最重要的是能否利用现有的数据来选择合适的模型</strong>，<strong>并且给出结果分析</strong>。</p>
+<p>这个比赛有一个很深的体会是类似于层次分析法、灰度预测、主成成分分析法这类简单的老旧的分析算法很多人说没有竞争力了，但是在这类算法因为其简单，可以很快的给我们一个大致的方向，并且在一些要求不高的分析预测中能够有不错的表现。</p>
+<h2 id="论文写作"><a href="#论文写作" class="headerlink" title="论文写作"></a><strong>论文写作</strong></h2><p>在以上工作做完以后，有了solution就开始着手论文了，这一点我认为是我们比赛中做的不太好的一个环节。下次还参加的话，给自己的建议是：<strong>建模和论文并行</strong>，这样就不会有写论文的时候忘记了当初的想法，或者跑出结果后的第二天跑结果不对了之类的问题。</p>
+<p>整个论文大致是先中文写出来然后google机翻然后人工润色，比较重要的部分是摘要，摘要部分最好解决了一个问题就进行相应的记录。之后的逻辑大致是：描述问题、描述模型、算法介绍以及原理、实验结果、结论分析。其实这个逻辑写下来比较顺畅，再有就是<strong>强烈建议用latex</strong>，新手也推荐入门一下，入门并不难，而且网上有很多现有的模版可以用，没有记错的话比赛的时候官方会给一个模版，真的比word方便很多，省去了恶心人的排版和图片问题，并且对于数学公式的适配友好非常多。</p>
+<p>要注意论文写作的细节部分，比如图的注脚，表格格式和风格适配等等，这些细节很折磨人，但是也蛮重要的。</p>
+<h1 id="赛后闲话"><a href="#赛后闲话" class="headerlink" title="赛后闲话"></a><strong>赛后闲话</strong></h1><p>总体下来两个队友还是很牛的，直接带飞摸鱼的我，比赛的四天很折磨，睡眠不好，eric还说他心率不齐，打完比赛的那天我没有早课，十点多起来的时候看见群里ruia说形策课讲到了塞罕坝ptsd了，过了几天eric也发表了类似的言论。但是回想起来还是非常有意义的经历：</p>
+<p><strong>第一次不是因为玩通宵，和eric在自习室刷夜，我嘲笑他说三四点他就该睡着了，但是结果是我们都干到了五点多六点，然后我比他先倒在了沙发上。</strong></p>
+<p><strong>在通宵的时候eric和我说是不是能看到日出，通宵那天晚上开着腾讯会议听歌，早上六七点走出自习室微凉的风。</strong></p>
+<p><strong>后续的几天在咖啡厅坐一整天，一起去吃黄焖鸡、鸡公煲，一起闲聊。</strong></p>
+<p><strong>写好solution的第二天eric跟我说他跑出来的结果和我完全相反，最后检查出来是数据出错了。</strong></p>
+<p><strong>找了数模老师做指导老师，最后等我们获奖结果出来了才联系上他。</strong></p>
+<p><strong>交作品的前一天晚上我是最早睡的，没有等到交论文就睡了，结果eric在检查的时候发现我的图片注脚出现问题了，给我发了好几条微信我没有收到，第二天被他说了几句。</strong></p>
+<p>这算是我在大学获得的第一个奖项，非常有意义，也非常有趣</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/">http://example.com/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2022/09/07/csu/" title="中南时光"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">中南时光</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/2022/03/25/About%20me/" title="About me"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">About me</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%94%E8%B5%9B%E5%89%8D"><span class="toc-number">1.</span> <span class="toc-text">比赛前</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E9%98%9F"><span class="toc-number">1.1.</span> <span class="toc-text">组队</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%9B%E5%89%8D%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86%E5%87%86%E5%A4%87"><span class="toc-number">1.2.</span> <span class="toc-text">赛前相关知识准备</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AF%94%E8%B5%9B%E4%B8%AD"><span class="toc-number">2.</span> <span class="toc-text">比赛中</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%AE%89%E6%8E%92"><span class="toc-number">2.1.</span> <span class="toc-text">时间安排</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86"><span class="toc-number">2.2.</span> <span class="toc-text">数据收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C"><span class="toc-number">2.3.</span> <span class="toc-text">论文写作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%9B%E5%90%8E%E9%97%B2%E8%AF%9D"><span class="toc-number">3.</span> <span class="toc-text">赛后闲话</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/11/30/1/" title="nudter选课指南">nudter选课指南</a><time datetime="2024-11-30T00:33:58.000Z" title="Created 2024-11-30 08:33:58">2024-11-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/09/07/csu/" title="中南时光">中南时光</a><time datetime="2022-09-06T16:00:00.000Z" title="Created 2022-09-07 00:00:00">2022-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/03/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E6%80%BB%E7%BB%93/" title="亚太数模总结">亚太数模总结</a><time datetime="2022-05-02T16:00:00.000Z" title="Created 2022-05-03 00:00:00">2022-05-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/03/25/About%20me/" title="About me">About me</a><time datetime="2022-03-24T16:00:00.000Z" title="Created 2022-03-25 00:00:00">2022-03-25</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
